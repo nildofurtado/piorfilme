@@ -1,6 +1,6 @@
 # Golden-Raspberry-Awards
 
-API RESTful Leitura da lista de indicados e vencedores da categoria Pior Filme do Golden Raspberry Awards
+RESTful API Reading the list of nominees and winners in the Worst Picture category of the Golden Raspberry Awards
 
 ## Installation
 

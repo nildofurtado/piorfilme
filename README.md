@@ -24,6 +24,10 @@ $ pip install -r requirements.txt
 |──────requirements.txt
 
 ```
+### File for presentation
+```
+$ app/list.csv
+```
 
 ## Run Flask
 ### Run flask for develop

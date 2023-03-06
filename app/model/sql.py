@@ -22,7 +22,7 @@ class connect(object):
         for i in range(len(lista)):
             result = self.cursor.execute(
                 f'select MAX(dbase.year) AS maxyear, MIN(dbase.year) AS minyear, \
-                    ( MAX(dbase.year) - MIN(dbase.year) ) as  total ,producers from dbase where producers LIKE "%{lista[i]}%"  ')
+                    ( MAX(dbase.year) - MIN(dbase.year) ) as  total ,producers from dbase where winner = "yes" and producers LIKE "%{lista[i]}%"  ')
             r = result.fetchall()
             if r[0][2] != 0:
                 result = {

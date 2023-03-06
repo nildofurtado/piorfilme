@@ -20,8 +20,10 @@ def treatment(value):
         names = []
         for sublist in data:
             for name in sublist:
-                names += name.strip().split('and')
+                names += name.split(',')
 
-        sname = [name.strip().lstrip() for i in names for name in i.split(',')]
+        sname = [name.strip().lstrip() for i in names for name in i.split(' and ')]
+
+
         
         return sname

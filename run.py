@@ -12,7 +12,7 @@ def index():
     result = export.treatment(res)
     res = list(set(filter(None, result)))
     result = sql.connect().WorstMmovieTreatment(lista=res)
-    return make_response(jsonify(result),200)
+    return make_response(result, 200)
 
 @app.errorhandler(404)
 def page_not_found(error):

@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#banco de dados criado ao executar o sistema.
+app/*.db
